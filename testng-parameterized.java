@@ -4,6 +4,8 @@
 == TestNG PARAMETERIZED TESTING - USING DATA PROVIDERS
 ====================================================== */
 
+/* Passing simple values **/
+
 public class ParamTestWithDataProvider1 {
    private PrimeNumberChecker primeNumberChecker;
    
@@ -24,5 +26,25 @@ public class ParamTestWithDataProvider1 {
       System.out.println(inputNumber + " " + expectedResult);
       
       Assert.assertEquals(expectedResult, primeNumberChecker.validate(inputNumber));
+   }
+}
+
+/** Passing Objects **/
+public class Oop {
+   private String val;
+   private int i;
+   // constructor / getter / setters here
+   ...
+}
+
+public class ParamTestWithDataProvider2 {
+   @DataProvider(name = "dpname2")
+   public static Object[][] primeNumbers() {
+      return new Object[][] { { new Oop("hi I am the bean", 111) } };
+   }
+
+   @Test(dataProvider = "dpname2")
+   public void testMethod(Oop ourOop) {
+      System.out.println(ourOop.getVal() + " " + ourOop.getI());
    }
 }
