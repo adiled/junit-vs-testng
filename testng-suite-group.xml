@@ -5,7 +5,7 @@
   <!-- Method Bundling -->
     <groups>
       <run>
-        <include name="method1"/>
+        <include name="groupname"/>
       </run>
     </groups>
     
