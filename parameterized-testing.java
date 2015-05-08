@@ -44,6 +44,8 @@ public class FibonacciTest {
 == TestNG PARAMETERIZED TESTING - USING DATA PROVIDERS
 ====================================================== */
 
+/* Test cases to test {@link ILookupService}. */
+
 public class LookupServiceTests extends BaseTestCase
 {
 
