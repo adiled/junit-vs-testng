@@ -6,8 +6,8 @@
 
 
 @RunWith(Parameterized.class)
-public class FibonacciTest
-{
+public class FibonacciTest {
+    
     private Integer input;
     private Integer expected;
 
