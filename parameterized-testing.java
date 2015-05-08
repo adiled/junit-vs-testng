@@ -32,9 +32,9 @@ public class FibonacciTest {
     @Test
     public void FibonacciTest()
     {
-        System.out.println("Input input + ". Expected: " + expected);
-        // Assert.assertEquals(expected, Fibonacci.compute(input));
-        // assertEquals(expected, Fibonacci.compute(input));
+        System.out.println("Input: " + input + " Expected: " + expected);
+        Assert.assertEquals(expected, Fibonacci.compute(input));
+        assertEquals(expected, Fibonacci.compute(input));
     }
 }
 
