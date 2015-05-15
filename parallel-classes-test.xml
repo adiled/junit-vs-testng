@@ -1,0 +1,8 @@
+<suite name="Suite" parallel="classes" thread-count="2" >
+  <test name="Test" >
+    <classes>
+      <class name="com.oop.pres.ParallelClassesTestOne" />
+      <class name="com.oop.pres.ParallelClassesTestTwo" />
+    </classes>
+  </test>
+</suite>
